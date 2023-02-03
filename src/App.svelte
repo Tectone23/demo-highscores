@@ -39,6 +39,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    animation: vintage 3s infinite;
   }
 
   .container.scores {
@@ -109,6 +110,36 @@
     100% {
       text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
         -0.04em -0.025em 0 #fffc00;
+    }
+  }
+
+  @keyframes vintage {
+    0% {
+      box-shadow: inset 0 0 50px rgb(31, 33, 24);
+    }
+
+    15% {
+      box-shadow: inset 0 0 20px rgb(31, 33, 24);
+    }
+    20% {
+      box-shadow: inset 0 0 50px rgb(31, 33, 24);
+    }
+    24% {
+      box-shadow: inset 0 0 20px rgb(31, 33, 24);
+    }
+    28% {
+      box-shadow: inset 0 0 50px rgb(31, 33, 24);
+    }
+    32% {
+      box-shadow: inset 0 0 20px rgb(31, 33, 24);
+    }
+
+    50% {
+      box-shadow: inset 0 0 45px rgb(31, 33, 24);
+    }
+
+    100% {
+      box-shadow: inset 0 0 50px rgb(31, 33, 24);
     }
   }
 </style>
